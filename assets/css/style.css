@@ -98,26 +98,64 @@ width: calc(100% - 200px);
             background-color: rgb(117, 155, 142);
             
         }
+
+        /* 1° SECTION  */
         #first-section{
             padding:1.5rem 0;
+            width: 100%;
         }
-       #first-section div>a{
-        color: #75777C;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        padding-right: 1rem;
+        #first-section div>a{
+            color: #75777C;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            padding-right: 1rem;
         }
+        /* /1° SECTION  */
+        
+        /* ---------------- */
         div.sub-container{
             margin:0 1rem;
+        }
+        /* ---------------- */
+
+        /* 2° SECTION  */
+        #second-section{
+            width: 100%;
         }
         #second-section .recently-paragraph{
             display: block;
      }
-
+        /* /2° SECTION  */
        
 
+        /* 3° SECTION  */
+        #third-section{
+            width: 100%;
+        }
+       
+        #third-section .square{
+            width: 100%;
+            height: 100%;
+        }
+        .square .photo{
+            height: 100%;
+            width: 100%;
+        }
 
+        .square .photo>img{
+            width: 100%;
+            height: 100%;
+            object-fit:scale-down;
+        }
+
+        
+
+
+
+
+
+        /* /3° SECTION  */
 
 
 
@@ -144,6 +182,25 @@ width: calc(100% - 200px);
 
 
 /* MEDIA QUERY  */
+
+/* @media screen and (min-width:992px) {
+    #third-section .photo{
+        width: calc(100%/6);
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:991.98){
+    #third-section .photo{
+        width: calc(100%/4);
+        height: 100%;
+    }
+} */
+
+
+
+
 @Media screen and (max-width:576px){
     ._fixed-width-xs{
         width: 60px;
@@ -152,4 +209,9 @@ width: calc(100% - 200px);
     ._dynamic-width-xs{
         width: calc(100% - 60px);
     }
+
+    /* #third-section .photo{
+        width: calc(100%/2);
+        height: 100%;
+    } */
 }
