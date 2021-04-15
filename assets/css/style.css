@@ -1,0 +1,33 @@
+/* DEBUG  */
+
+#top-nav ._fixed-width, #top-nav ._dynamic-width{
+    height: 10vh;
+    border:1px solid rgb(78, 61, 61);
+}
+
+/* UTILITY CLASSES  */
+._fixed-width{
+    width: 300px;
+}
+
+._dynamic-width{
+width: calc(100% - 300px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY  */
+@Media screen and (max-width:576px){
+    ._col-xs-auto{
+        width: auto;
+    }
+}
