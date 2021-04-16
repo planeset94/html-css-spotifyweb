@@ -163,11 +163,14 @@ width: calc(100% - 200px);
        
 
         /* 3° SECTION  */
+        
+       /*  -------- CARDS FORMATTING--------------- */
+
         #third-section{
             width: 100%;
         }
        
-        #third-section .square{
+        .square{
             width: 100%;
             height: auto;
            
@@ -180,19 +183,19 @@ width: calc(100% - 200px);
             
            
         }
-        #third-section h5,  #third-section p{
+        .square h5,  .square p {
             width: 100%;
             height: auto;
             text-align: center;
         }
 
-        #third-section h5{
+        .square h5{
             font-weight: bold;
             font-size: 1rem;
             padding-top: 0.8rem;
             
         }
-        #third-section p{
+        .square p{
             font-size: 90%;
             color: #797A7F;
         }
@@ -202,40 +205,63 @@ width: calc(100% - 200px);
             height: 100%;
             object-fit:scale-down;
         }
-
+    /*  -------- / CARDS FORMATTING--------------- */
         
-        /* HOVER PHOTO  */
+    /* ---------------HOVER PHOTO------------------  */  
+    
+    .square .photo .tendina{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        background-color: #0000005c;
+        display: none;
+    }
+    
+    .square .tendina i{
+        content: "\f067";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
         
-       
+        
+    }
+    .square .photo:hover .tendina{
+        display: block;
+    }
 
-        #third-section .photo .tendina{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 100%;
-            width: 100%;
-            background-color: #0000005c;
-            display: none;
-        }
+    /* ---------------/HOVER PHOTO------------------  */
+    
+    /* /3° SECTION  */
+    
+    /* 4-5° SECTION  */
+    #fourth-section, #fifth-section{
+        width: 100%;
+    }      
 
-        .tendina i{
-            content: "\f067";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 2.5rem;
-           
+      #fourth-section .john-paragraph, #fifth-section .popular-paragraph{
+          display: block;
+          padding: 1rem 0;
+        
+      }
 
-        }
-        #third-section .photo:hover .tendina{
-            display: block;
-        }
-
-        /* /3° SECTION  */
+      #fourth-section p:last-of-type, #fifth-section p:last-of-type{
+        font-size: 90%;
+        color: #797A7F;
+        margin-bottom: 8px;
+      }
 
 
+
+
+
+        /* /4° SECTION  */
+
+                
 
 
 
