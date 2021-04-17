@@ -12,7 +12,6 @@ body{
 
 
 ._clearfix._container{
-    height: calc(100vh - 60px);
     width: 100%;
     /* overflow: hidden; */
 }
@@ -20,7 +19,8 @@ body{
 
 
 ._principal{
-    height: 100%;
+    height: calc(100vh - 60px);
+ 
     background-color: rgb(185, 185, 184);
     float: left;
     overflow-x: hidden;
@@ -47,6 +47,9 @@ body{
     width:100%;
 }
 
+._pl-aside{
+    padding-left: 1.5rem;
+}
 
 ._fixed-width{
     width: 200px;
@@ -151,14 +154,20 @@ margin-bottom: 8px;
     /* ------ASIDE--------- */
     aside{
         /* height: calc(100vh - 60px); */
-        height: 100%;
+        height: calc(100vh - 60px);
         background-color: #080B12;
         float: left;
          z-index: 2;
     }
-    #aside-container{
-        padding-left: 1.5rem;
+  
+    .frame-flex{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
     }
+
 
         /* LOGO SIDE  */
         .logo-side .top-side, .middle-side, .bottom-side{
@@ -167,6 +176,8 @@ margin-bottom: 8px;
        
         #logo-big{
             height: 45.19px;
+            margin-left: -1rem;
+            
             
         }
         #logo-small{
@@ -181,9 +192,6 @@ margin-bottom: 8px;
 
         /* TOP SIDE  (Rimangono valide le regole associate a "square")*/ 
 
-        .top-side .square{
-            align-items: center;
-        }
         .photo-icon{
             width:16%;
             height: 100%;
@@ -202,13 +210,14 @@ margin-bottom: 8px;
 
         /* MIDDLE SIDE  */
       
-        .middle-side{
+        .middle-side {
             width: 100%;
-            height: 50vh;
+            height: 40vh;
             overflow-y: auto;
             overflow-x: hidden;
-        
         }
+         
+
         .text-icon p{
             font-size: 1rem;
         }
@@ -259,8 +268,7 @@ margin-bottom: 8px;
 
 
 
-
-
+    
 
 
 
@@ -413,6 +421,8 @@ margin-bottom: 8px;
             color:white;
             position: fixed;
             z-index: 5;
+
+            padding-right: 5rem;
 
             
            
