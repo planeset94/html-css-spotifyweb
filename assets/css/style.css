@@ -4,25 +4,20 @@ body{
 /* DEBUG  */
 
 .container-fluid{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    padding:0;
     
 }
 
 
 ._clearfix._container{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
     width: 100%;
     /* overflow: hidden; */
 }
 
-aside{
-    height: 100%;
-    /* background-color: #080B12; */
-    background-color: #cddc39;
-    float: left;
-     z-index: 2;
-}
+
 
 ._principal{
     height: 100%;
@@ -64,32 +59,263 @@ width: calc(100% - 200px);
     color: #797A7F;
 }
 
+ /*  -------- CARDS FORMATTING--------------- */
+
+
+.square{
+    width: 100%;
+    height: auto;
+   
+   
+}
+.square .photo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+   
+}
+.square h5,  .square p {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.square h5{
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    
+}
+.square p{
+    font-size: 90%;
+    color: #797A7F;
+}
+
+.square .photo>img{
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+/*  -------- / CARDS FORMATTING--------------- */
+
+/* ---------------HOVER PHOTO------------------  */  
+
+.square .photo .tendina{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 100%;
+width: 100%;
+background-color: #0000005c;
+display: none;
+}
+
+.square .tendina i{
+content: "\f067";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 2.5rem;
+
+
+}
+.square .photo:hover .tendina{
+display: block;
+}
+
+/* ---------------/HOVER PHOTO------------------  */
+
+/* /3° SECTION  */
+
+/* 4-5° SECTION  */
+#fourth-section, #fifth-section{
+width: 100%;
+}      
+
+#fourth-section .john-paragraph, #fifth-section .popular-paragraph{
+  display: block;
+  padding: 1rem 0;
+
+}
+
+#fourth-section p:last-of-type, #fifth-section p:last-of-type{
+font-size: 90%;
+color: #797A7F;
+margin-bottom: 8px;
+}
+
+
+    /* ------ASIDE--------- */
+    aside{
+        /* height: calc(100vh - 60px); */
+        height: 100%;
+        background-color: #080B12;
+        float: left;
+         z-index: 2;
+    }
+    #aside-container{
+        padding-left: 1.5rem;
+    }
+
+        /* LOGO SIDE  */
+        .logo-side .top-side, .middle-side, .bottom-side{
+            width: 100%;
+        }
+       
+        #logo-big{
+            height: 45.19px;
+            
+        }
+        #logo-small{
+            height: 40px;
+        }
+       #iconcine{
+            height: 30px;
+            margin:0.4rem 0;
+        }
+
+        /* /LOGO SIDE  */
+
+        /* TOP SIDE  (Rimangono valide le regole associate a "square")*/ 
+
+        .top-side .square{
+            align-items: center;
+        }
+        .photo-icon{
+            width:16%;
+            height: 100%;
+        }
+       
+       .text-icon p{
+            padding-left: 0.5rem;
+            margin-bottom: 0;
+        }
+        
+        .text-icon p:hover{
+            color: white;
+        }
+                
+        /* /TOP SIDE  */
+
+        /* MIDDLE SIDE  */
+      
+        .middle-side{
+            width: 100%;
+            height: 50vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        
+        }
+        .text-icon p{
+            font-size: 1rem;
+        }
+               
+        .nome-playlist p{
+            font-size: 0.85rem;
+        }
+
+        .nome-playlist ul{
+            padding-left:0;
+        }
+        .nome-playlist li{
+            list-style: none;
+    
+        }
+        
+        .nome-playlist p:hover{
+            color: white;
+        }
+
+
+
+
+
+
+
+
+        
+        /* /MIDDLE SIDE  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* -----/ASIDE--------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* PRINCIPAL PART  */
         /* Header  */
 
         header{
             width: 100%;
-            padding:2rem 0;
             background-color: #080B12;
-            position: relative;
-            z-index: 1;
+            position: sticky;
+            top: 0;
+            right: 0;
+            z-index: 1;         
             
         }
 
+        header div{
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
         header button {
-            position:absolute;
-            top:50%;
-            right: 0;
-            transform: translateY(-50%);
-            padding: 0.3rem 2rem;
             margin-right:1rem;
+            padding: 0.6rem 2rem;
             border:1px solid white;
             border-radius: 15px;
+            
             background-color: inherit;
-           
+
         }
+
         header button a{
             color: white;
+            font-size: 0.9rem;
         }
 
 
@@ -106,7 +332,7 @@ width: calc(100% - 200px);
 
         /* 1° SECTION  */
         #first-section{
-            padding:1.5rem 0;
+            padding: 1rem 0 1.5rem 0;
             width: 100%;
             line-height: 2rem;
         }
@@ -164,102 +390,12 @@ width: calc(100% - 200px);
 
         /* 3° SECTION  */
         
-       /*  -------- CARDS FORMATTING--------------- */
-
+      
         #third-section{
             width: 100%;
         }
-       
-        .square{
-            width: 100%;
-            height: auto;
-           
-           
-        }
-        .square .photo{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            
-           
-        }
-        .square h5,  .square p {
-            width: 100%;
-            height: auto;
-            text-align: center;
-        }
 
-        .square h5{
-            font-weight: bold;
-            font-size: 1rem;
-            padding-top: 0.8rem;
-            
-        }
-        .square p{
-            font-size: 90%;
-            color: #797A7F;
-        }
-
-        .square .photo>img{
-            width: 100%;
-            height: 100%;
-            object-fit:scale-down;
-        }
-    /*  -------- / CARDS FORMATTING--------------- */
-        
-    /* ---------------HOVER PHOTO------------------  */  
-    
-    .square .photo .tendina{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 100%;
-        width: 100%;
-        background-color: #0000005c;
-        display: none;
-    }
-    
-    .square .tendina i{
-        content: "\f067";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2.5rem;
-        
-        
-    }
-    .square .photo:hover .tendina{
-        display: block;
-    }
-
-    /* ---------------/HOVER PHOTO------------------  */
-    
-    /* /3° SECTION  */
-    
-    /* 4-5° SECTION  */
-    #fourth-section, #fifth-section{
-        width: 100%;
-    }      
-
-      #fourth-section .john-paragraph, #fifth-section .popular-paragraph{
-          display: block;
-          padding: 1rem 0;
-        
-      }
-
-      #fourth-section p:last-of-type, #fifth-section p:last-of-type{
-        font-size: 90%;
-        color: #797A7F;
-        margin-bottom: 8px;
-      }
-
-
-
-
-
-        /* /4° SECTION  */
+        /* /3° SECTION  */
 
                 
 
@@ -271,8 +407,14 @@ width: calc(100% - 200px);
         /* FOOTER BAR  */
         
         footer{
-            height: 100px;
-            background-color: rgb(207, 16, 16);
+            height: 60px;
+            width: 100%;
+            background-color: #080B12;
+            color:white;
+            position: fixed;
+            z-index: 5;
+
+            
            
         }
         
@@ -314,8 +456,12 @@ width: calc(100% - 200px);
         width: calc(100% - 60px);
     }
 
-    /* #third-section .photo{
-        width: calc(100%/2);
-        height: 100%;
-    } */
+    #logo-small{
+        margin-top:0.3rem;
+        margin-bottom: 0.7rem;
+    }
+        
+        
+   
+
 }
