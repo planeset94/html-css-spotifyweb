@@ -405,8 +405,13 @@ margin-bottom: 8px;
 
         /* /3° SECTION  */
 
-                
-
+        /* 5°SECTION  */
+        
+        #fifth-section img{
+            border-radius: 50%;
+        }   
+        
+        /* /5°SECTION  */
 
 
 
@@ -475,5 +480,8 @@ margin-bottom: 8px;
             padding-left: 0;
         }
    
+        ._d-xs-none{
+            display: none;
+        }
 
 }
