@@ -306,7 +306,7 @@ margin-bottom: 8px;
 
     
         .square-down{
-            padding-top: 1rem;
+            padding:1rem 0 0.5rem 0;
             align-items: center;
         }
        
@@ -323,37 +323,7 @@ margin-bottom: 8px;
         }
        
 
-
-
-
     /* -----/ASIDE--------- */
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /* PRINCIPAL PART  */
@@ -486,47 +456,113 @@ margin-bottom: 8px;
         footer{
             height: 60px;
             width: 100%;
-            background-color: #080B12;
-            color:white;
+            background-color: #282828;
+            color: white;
             position: fixed;
             z-index: 5;
-
-            padding-right: 5rem;
-
+         }
+                
+        .fixed-bottom-bar{
+            width: 100%;
+            height: 100%;
+            padding:0.7rem 0;
             
-           
         }
+
+            .left-footer, .central-footer, .right-footer{
+                height: 100%;
+                
+            }
+
+                /* LEFT-FOOTER  */
+                .left-footer{
+                flex-basis: 20%;
+                align-items: center;
+                justify-content: flex-start;             
+                    
+                }
+
+                .left-footer .mini-album, .left-footer .text-album{
+                    width: auto;
+                    height: 100%;
+                
+                    
+                }
+                .left-footer .mini-album>img{
+                    height: 100%;
+                    object-fit: contain;
+                }
+                .text-album{
+                    padding-left: 0.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    
+                    
+                }
+                .text-album h5{
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    margin: 0;
+                }  
+                
+                .text-album p{
+                    font-size: 0.6rem;
+                    margin: 0; 
+                }
+
+                .like-save-icons{
+                    padding-left: 2rem;
+                    height: 100%;
+                    width: auto;
+                    
+                }
+                .like-save-icons i{
+                    font-size: 0.8rem; 
+                }
+                .like-save-icons i:last-of-type{
+                    padding-left: 0.5rem;
+                }
+
+                /* /LEFT-FOOTER  */
         
-        
-        
-        
-        
-        
+                /* CENTRAL FOOTER  */
+                
+                .progress-bar{
+                    display: block;
+                    width: 40vw;
+                    height: 3px;
+                    background-color: white;
+                }
+
+
+                
+                /* /CENTRAL FOOTER  */
+
+
+
+
+
+                /* RIGHT FOOTER  */
+                .right-footer{
+                    flex-basis: 20%;
+                }
+                
+                
+                
+                /* /RIGHT FOOTER  */
+
         
         /* /FOOTER BAR  */
 
 
-/* MEDIA QUERY  */
-
-/* @media screen and (min-width:992px) {
-    #third-section .photo{
-        width: calc(100%/6);
-        height: 100%;
+@media screen and (max-width:768px){
+    .like-save-icons i:last-of-type{
+        margin-top: 5px;
+        padding-left: 0;
     }
 }
-
-
-@media screen and (min-width:768px) and (max-width:991.98){
-    #third-section .photo{
-        width: calc(100%/4);
-        height: 100%;
-    }
-} */
-
-
-
-
-
 
 
 @Media screen and (max-width:576px){
@@ -555,4 +591,12 @@ margin-bottom: 8px;
             border:none;
             width: 100%;
         }
+        .like-save-icons{
+            padding-left: 1rem;
+        }
+        .like-save-icons i:last-of-type{
+            margin-top: 5px;
+            padding-left: 0;
+        }
 }
+
