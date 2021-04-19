@@ -190,6 +190,10 @@ margin-bottom: 8px;
             margin:0.4rem 0;
         }
 
+        #iconcine:hover{
+            border-left: 2px solid #ADFF2F;
+        }
+
         /* /LOGO SIDE  */
 
         /* TOP SIDE  (Rimangono valide le regole associate a "square")*/ 
@@ -285,14 +289,39 @@ margin-bottom: 8px;
 
         .bottom-side{
             z-index: 5;
-            background-color: blueviolet;
+        }
+        .bottom-side .square-top{
+            align-items: center;
+            width: 90%;
+            border-bottom: 1px solid white;
+            padding-bottom: 0.5rem;
+        }
+        .bottom-side .square-top p{
+            font-size: 0.7rem;
+
+        }
+        .bottom-side .square-top i{
+            font-size: 0.8rem;
         }
 
-
-
-
-
-
+    
+        .square-down{
+            padding-top: 1rem;
+            align-items: center;
+        }
+       
+        .square-down .joe-picture>img{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color:#808080;           
+            
+        }
+        .square-down .text-icon p{
+            font-weight: bolder;
+            font-size: 0.8rem;
+        }
+       
 
 
 
@@ -522,4 +551,8 @@ margin-bottom: 8px;
             display: none;
         }
 
+        .bottom-side .square-top{
+            border:none;
+            width: 100%;
+        }
 }
