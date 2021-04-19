@@ -513,7 +513,7 @@ margin-bottom: 8px;
                 }
 
                 .like-save-icons{
-                    padding-left: 2rem;
+                    padding-left: 1.5rem;
                     height: 100%;
                     width: auto;
                     
@@ -528,15 +528,57 @@ margin-bottom: 8px;
                 /* /LEFT-FOOTER  */
         
                 /* CENTRAL FOOTER  */
-                
-                .progress-bar{
-                    display: block;
-                    width: 40vw;
-                    height: 3px;
-                    background-color: white;
+                .central-footer{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+                }
+          
+                .player-btn ul{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0;
+                }
+                .player-btn ul li{
+                    display: flex;
+                    align-items: center;
+                }
+                .player-btn ul>li>a{
+                    text-decoration: none;
+                    color: white;
+                    padding-right: 1rem;
+                    font-size: 0.7rem;
+                    
+                }
+                li .fa-play-circle{
+                    font-size: 1.2rem;
                 }
 
 
+                .time-container{
+                    display: flex;
+                    align-items: center;
+                    margin-top: -0.9rem;
+                }
+                .time-passed, .duration{
+                    font-size: 0.6rem;
+                    font-weight: bold;
+                    color: #FDFDFD;
+                    
+                }
+               
+
+
+                .progress-bar{
+                    border-radius: 10px;
+                    width: 35vw;
+                    height: 3px;
+                    background-color: #C1C1C1;
+                }
+              
                 
                 /* /CENTRAL FOOTER  */
 
@@ -598,5 +640,8 @@ margin-bottom: 8px;
             margin-top: 5px;
             padding-left: 0;
         }
+
+
+
 }
 
