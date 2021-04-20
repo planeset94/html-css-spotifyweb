@@ -92,14 +92,14 @@ width: calc(100% - 200px);
     
 }
 .square p{
-    font-size: 80%;
+    font-size: 0.7rem;
     color: #797A7F;
 }
 
 .square .photo>img{
     width: 100%;
     height: 100%;
-    object-fit:scale-down;
+    
 }
 /*  -------- / CARDS FORMATTING--------------- */
 
@@ -399,12 +399,13 @@ margin-bottom: 8px;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 0.7rem;
-            padding-right: 1rem;
+           margin-right: 1rem;
             text-align: center;
         }
 
-        #first-section div{
+        #first-section div:first-of-type a{
             position:relative;
+            
         }
 
 
@@ -417,7 +418,8 @@ margin-bottom: 8px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 0;
+            top:1.3rem;
+            
         }
 
         #first-section div a:hover{
@@ -648,7 +650,7 @@ margin-bottom: 8px;
                 
                 .right-footer i{
                     padding-right: 0.6rem;
-                    font-size: 0.7rem;
+                    font-size: 0.8rem;
                 }
                 
                 /* /RIGHT FOOTER  */
@@ -673,6 +675,8 @@ margin-bottom: 8px;
     ._dynamic-width-xs{
         width: calc(100% - 60px);
     }
+
+   
 
     #logo-small{
         margin-top:0.3rem;
@@ -699,7 +703,84 @@ margin-bottom: 8px;
             padding-left: 0;
         }
 
+        
 
 
+}
+
+/* ---------BONUS------------ */
+
+@media screen and (min-width:992px){
+    #sinister{
+        display: block;
+    }
+    #cure{
+        display: block;
+    }
+    #split{
+        display: block;
+    }
+
+    #place{
+        display: block;
+    }
+
+    #stranger{
+        display: block;
+    }
+    #metal{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px){
+    #sinister{
+        display: none;
+    }
+    #cure{
+        display: none;
+    }
+    #split{
+        display: block;
+    }
+
+    #place{
+        display: block;
+    }
+
+    #stranger{
+        display: block;
+    }
+    #metal{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:567px) and (max-width:767.98px){
+    #sinister{
+        display: none;
+    }
+    #cure{
+        display: none;
+    }
+    #split{
+        display: none;
+    }
+
+    #place{
+        display: none;
+    }
+
+    #stranger{
+        display: block;
+    }
+    #metal{
+        display: block;
+    }
+
+    
+    
 }
 
