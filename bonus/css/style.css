@@ -74,7 +74,20 @@
     
 }
 
+/* ------------BONUS -- HIDE BUTTON------ */
 
+@media screen and (max-height: 300px){
+    header button{
+        display: none;
+    }
+    #logo-big{
+        position:absolute;
+        left: 50vw;
+        transform: translateX(-10vw);
+        top:-7vh;
+       
+    }
+}
 
 
 /* ------BONUS ANIMAZIONE button  */
