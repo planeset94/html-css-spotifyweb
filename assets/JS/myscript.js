@@ -1,8 +1,8 @@
-// document.getElementById('testo')='ciao a tutti';
+// // document.getElementById('testo')='ciao a tutti';
 
-alert("Helloooo");
+// alert("Helloooo");
 
 
-// document.writeln("Hello World");
-document.getElementById("testo").innerHTML="Hello World";
-document.getElementById("bottone_id").innerHTML="Salve docenti boolean";
+// // document.writeln("Hello World");
+// document.getElementById("testo").innerHTML="Hello World";
+// document.getElementById("bottone_id").innerHTML="Salve docenti boolean";
